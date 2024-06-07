@@ -42,3 +42,4 @@ ORDER BY CompileTime_ms DESC
 OPTION(RECOMPILE,
 MAXDOP
 1);
+---
