@@ -9,9 +9,3 @@ $reader.Read()
 $reader[0]
 $reader.Close()
 $conn.Close()
-
-
-Exemplo de um odbc para configurar application intent 
-
-
-c:\Users\dbawe\AppData\Local\Temp\image.png
