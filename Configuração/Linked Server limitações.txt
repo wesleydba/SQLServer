@@ -1,0 +1,31 @@
+Linked Server Limitations
+
+The following are the Linked Server limitations:
+
+1. Login mappings have to exist along all paths it's using (Servers)
+
+2. Amount of data coming from the other server, resulting in some very bad query plans (Query plan may not be Re-Used effectively)
+
+3. Context Switching inside the Stored Procedure will cause problem.
+
+4. XML type parameter cannot be used with Linked Server.
+
+5. Table-valued parameters cannot be used.
+
+6. CLR User-defined data type cannot be used.
+
+7. Cannot call table-valued functions with four-part notation.
+
+8. BULK INSERT statement into linked server is not supported.
+
+9. Save Transaction Cannot be applied during distributed transaction.
+
+10. Case statement won't work properly.
+
+11. There is a chance to exceed the “remote query timeout (s)”
+
+Note:
+The following are the two main system stored procedures to implement Linked Server
+1. sp_addlinkedserver - Used to define the linked server name to access an OLEDB datasources.
+
+2. sp_addlinkedsrvlogin - Local SQL Server logins are mapped to logins in the linked server.
