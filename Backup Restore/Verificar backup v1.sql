@@ -51,3 +51,4 @@ WHERE ISNULL(BS.is_damaged, 0) = 0-- exclude damaged backups
 GROUP BY DB.name
 ORDER BY Last_Backup desc;
 --
+--teste
