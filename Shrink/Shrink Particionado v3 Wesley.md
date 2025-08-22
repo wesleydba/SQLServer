@@ -85,6 +85,7 @@ into tbl_SHRINK
         left outer join sys.data_spaces sds on sds.data_space_id = sdf.data_space_id
     ) FileInformation
 ```
+
 <img width="1145" height="413" alt="image" src="https://github.com/user-attachments/assets/412f41e9-bc94-4d74-b9df-de0e4d8f47ef" />
 
 
@@ -334,6 +335,7 @@ Exemplo de que o script não irá passar o shrink se a margem de segurança for 
 <img width="1143" height="392" alt="image" src="https://github.com/user-attachments/assets/f21ac918-9d3a-4b11-927c-7888dc5ea391" />
 
 Como estava o database antes do shrink.
+
 <img width="697" height="354" alt="image" src="https://github.com/user-attachments/assets/9edba3a1-9f98-454a-be3e-8730f714b111" />
 
 Segue o calculo para a geração do comando de shrink, neste exemplo de acordo com a margem de segurança não irá liberar os 20Gb que foi efetuado a configuração e SIM apenas 10GB que será efetuado o shrink.
@@ -371,5 +373,6 @@ GO
 ```
 
 Como ficou após o shrink database, deixando assim 90Gb de espaço livre no database como espaço de segurança.
+
 <img width="700" height="357" alt="image" src="https://github.com/user-attachments/assets/fbbc138e-85b6-49a7-b5c6-6136c1187504" />
 
